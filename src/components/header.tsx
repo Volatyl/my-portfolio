@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/favicon.png";
+import cv from "../assets/cv.pdf";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
@@ -9,7 +10,7 @@ const Header = () => {
   const [open, setOpen] = useState(false);
   return (
     <div className="bg-black text-white md:flex justify-between p-5 px-[2rem] items-center">
-      <div className="left flex bg-black items-center">
+      <div className="left flex bg-black items-center cursor-pointer">
         <img src={logo} alt="logo" className="w-20 h-auto mr-5" />
         <span className="text-xl">KENNEDY MUINDE</span>
       </div>{" "}
@@ -26,13 +27,20 @@ const Header = () => {
           }`}
         >
           <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black">
-            <NavLink to={"/"}>HOME</NavLink>
+            <NavLink to={"/"} className="inline">
+              HOME
+            </NavLink>
           </li>
           <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black">
             <NavLink to={"/projects"}>PROJECTS</NavLink>
           </li>
           <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black">
             <NavLink to={"/contacts"}>CONTACTS</NavLink>
+          </li>
+          <li className="bg-orange-500 p-2 m-2 rounded-md hover:bg-orange-400 hover:scale-95 transition-all duration-300 inline">
+            <a href={cv} download>
+              DOWNLOAD CV
+            </a>
           </li>
         </ul>
       </div>
