@@ -9,13 +9,13 @@ function Home() {
     <div className="relative w-full bg-black">
       <div
         className="fixed top-0 left-0 w-full h-full bg-cover bg-center"
-        style={{ backgroundImage: `url(${bg})`, opacity: "0.2" }}
+        style={{ backgroundImage: `url(${bg})`, opacity: "0.4" }}
       ></div>
       <div className="relative z-10 text-center text-white mt-5">
         <div className="h-[89vh] pt-[15rem]">
           <h1 className="text-[8vw] font-light">HI, I'M KENNEDY</h1>
-          <p className="mt-2 tracking-[0.52rem]">Fullstack Developer</p>
-          <div className="text-3xl mt-[30vh] hover:rotate-180 transition-all duration-500">
+          <p className="mt-2 text-[2vw] tracking-[0.52rem]">Fullstack Developer</p>
+          <div className="text-[2rem] mt-[30vh] hover:rotate-180 transition-all duration-500">
             <FontAwesomeIcon icon={faArrowDown} />
           </div>
         </div>
