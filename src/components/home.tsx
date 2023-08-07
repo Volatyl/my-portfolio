@@ -6,9 +6,9 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
   return (
-    <div className="relative w-full bg-black">
+    <div className="relative w-full bg-black transition-all duration-500">
       <div
-        className="fixed top-0 left-0 w-full h-full bg-cover bg-center"
+        className="fixed top-0 left-0 w-full h-full bg-cover bg-center transition-all duration-500"
         style={{ backgroundImage: `url(${bg})`, opacity: "0.4" }}
       ></div>
       <div className="relative z-10 text-center text-white mt-5">
