@@ -4,6 +4,7 @@ import pic from "../assets/me.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Projects from "./projects";
+import Footer from "./footer";
 
 function Home() {
   return (
@@ -47,6 +48,9 @@ function Home() {
       </div>
       <div id="projects" className="">
         <Projects />
+      </div>
+      <div>
+        <Footer />{" "}
       </div>
     </>
   );

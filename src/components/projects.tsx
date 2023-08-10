@@ -14,8 +14,8 @@ function Projects() {
     <div className="">
       <div className="bg-black relative w-full h-[20vh]">
         <div
-          className="absolute top-0 left-0 h-full bg-cover bg-center w-full"
-          style={{ backgroundImage: `url(${back})`, opacity: "0.4" }}
+          className="absolute top-0 left-0 h-full bg-cover bg-center w-full blur-sm"
+          style={{ backgroundImage: `url(${back})`, opacity: "0.6" }}
         ></div>
         <div className="relative text-center text-white pt-[5vh]">
           <h1 className="text-[5vw]">WHAT I'VE DONE</h1> <p className="text-[1rem] font-thin">(more coming soon)</p>
