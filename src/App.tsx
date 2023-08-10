@@ -3,6 +3,7 @@ import Home from "./components/home";
 import Header from "./components/header";
 import Projects from "./components/projects";
 import Contacts from "./components/contacts";
+import NotFound from "./components/notfound";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contacts" element={<Contacts />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </div>
     </div>

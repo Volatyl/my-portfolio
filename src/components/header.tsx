@@ -8,11 +8,22 @@ import { useState } from "react";
 
 const Header = () => {
   const [open, setOpen] = useState(false);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
   return (
     <div className="bg-black text-white md:flex justify-between p-5 px-[2rem] items-center">
-      <div className="left flex bg-black items-center cursor-pointer">
-        <img src={logo} alt="logo" className="w-20 h-auto mr-5" />
-        <span className="text-xl">KENNEDY MUINDE</span>
+      <div className="left bg-black  cursor-pointer">
+        <NavLink
+          to={"/"}
+          className=" flex items-center hover:scale-95 transition-all duration-500"
+        >
+          <img src={logo} alt="logo" className="w-20 h-auto mr-5" />
+          <span className="text-xl">KENNEDY MUINDE</span>{" "}
+        </NavLink>
       </div>{" "}
       <div
         className="absolute right-10 top-10 md:hidden"
@@ -26,15 +37,17 @@ const Header = () => {
             open ? "opacity-100" : null
           }`}
         >
-          <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black">
-            <NavLink to={"/"} className="inline">
+          <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black transition-all duration-500">
+            {/* <NavLink to={"/"} className="inline">
               HOME
-            </NavLink>
+            </NavLink>  */}
+            <button onClick={scrollToTop}>HOME</button>
           </li>
-          <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black">
-            <NavLink to={"/projects"}>PROJECTS</NavLink>
+          <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black transition-all duration-500">
+            {/* <NavLink to={"/projects"}>PROJECTS</NavLink> */}
+            <a href="#projects">PROJECTS</a>
           </li>
-          <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black">
+          <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black transition-all duration-500">
             <NavLink to={"/contacts"}>CONTACTS</NavLink>
           </li>
           <li className="bg-orange-500 p-2 m-2 rounded-md hover:bg-orange-400 hover:scale-95 transition-all duration-300 inline">

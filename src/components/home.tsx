@@ -1,20 +1,32 @@
 import bg from "../assets/bg.jpg";
 import Socials from "./socials";
 import pic from "../assets/me.jpeg";
+import imports from "../assets/sites/imports.png";
+import calc from "../assets/sites/calc.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 function Home() {
+  const sites = [
+    { url: "https://fastidious-cascaron-b3aba8.netlify.app/", pic: imports },
+    {
+      url: "https://646c9dc63f98e6007ab7ec0d--fancy-haupia-fc64f5.netlify.app/",
+      pic: calc,
+    },
+  ];
   return (
     <div className="relative w-full bg-black transition-all duration-500">
-      <div
+      <section
+        id="home"
         className="fixed top-0 left-0 w-full h-full bg-cover bg-center transition-all duration-500"
         style={{ backgroundImage: `url(${bg})`, opacity: "0.4" }}
-      ></div>
+      ></section>
       <div className="relative z-10 text-center text-white mt-5">
         <div className="h-[89vh] pt-[15rem]">
           <h1 className="text-[8vw] font-light">HI, I'M KENNEDY</h1>
-          <p className="mt-2 text-[2vw] tracking-[0.52rem]">Fullstack Developer</p>
+          <p className="mt-2 text-[2vw] tracking-[0.52rem]">
+            Fullstack Developer
+          </p>
           <div className="text-[2rem] mt-[30vh] hover:rotate-180 transition-all duration-500">
             <FontAwesomeIcon icon={faArrowDown} />
           </div>
@@ -37,6 +49,20 @@ function Home() {
             where innovation meets execution.
           </p>
           <Socials />
+          <section
+            id="projects"
+            className="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pt-[6vh]"
+          >
+            {sites.map((site, index) => {
+              return (
+                <div key={index} className="shadow-md">
+                  <a href={site.url} target="_blank" rel="noopener noreferrer">
+                    <img src={site.pic} alt="Site image" />
+                  </a>
+                </div>
+              );
+            })}
+          </section>
         </div>
       </div>
     </div>

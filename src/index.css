@@ -2,9 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
+html {
+  scroll-behavior: smooth;
+}
 
 .background-image {
   position: absolute;
