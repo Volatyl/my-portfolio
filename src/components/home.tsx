@@ -23,7 +23,7 @@ function Home() {
             <p className="mt-2 text-[2vw] tracking-[0.52rem]">
               Fullstack Developer
             </p>
-            <div className="text-[2rem] mt-[30vh] hover:rotate-180 transition-all duration-500">
+            <div className="text-[2rem] mt-[30vh] animate-bounce">
               <FontAwesomeIcon icon={faArrowDown} />
             </div>
           </div>
