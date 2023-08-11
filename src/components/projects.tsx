@@ -29,13 +29,17 @@ function Projects() {
               key={index}
               className="shadow-md relative overflow-hidden group"
             >
-              <a href={site.url} target="_blank" rel="noopener noreferrer">
-                <img src={site.pic} alt="Site image" />
-              </a>
+              <img src={site.pic} alt="Site image" />
+
               <div className="absolute bg-black/20  h-full w-full -bottom-10 opacity-0 hover:opacity-100 hover:bottom-0 transition-all duration-500 flex justify-center items-center">
-                <button className="bg-orange-500 text-white px-4 py-2 rounded-md">
-                  VISIT SITE
-                </button>
+                <a
+                  href={site.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="bg-orange-500 text-white px-4 py-2 rounded-md"
+                >
+                  VISIT SITE{" "}
+                </a>
               </div>
             </div>
           );
