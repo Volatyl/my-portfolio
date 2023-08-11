@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Projects from "./projects";
 import Footer from "./footer";
+import Contacts from "./contacts";
 
 function Home() {
   return (
@@ -49,8 +50,11 @@ function Home() {
       <div id="projects" className="">
         <Projects />
       </div>
+      <div id="contacts">
+        <Contacts/>
+      </div>
       <div>
-        <Footer />{" "}
+        <Footer />
       </div>
     </>
   );

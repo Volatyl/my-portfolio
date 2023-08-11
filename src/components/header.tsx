@@ -38,17 +38,15 @@ const Header = () => {
           }`}
         >
           <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black transition-all duration-500">
-            {/* <NavLink to={"/"} className="inline">
-              HOME
-            </NavLink>  */}
-            <button onClick={scrollToTop}>HOME</button>
+            <NavLink to={"/"} className="inline">
+              <button onClick={scrollToTop}>HOME</button>
+            </NavLink>
           </li>
           <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black transition-all duration-500">
-            {/* <NavLink to={"/projects"}>PROJECTS</NavLink> */}
             <a href="#projects">PROJECTS</a>
           </li>
           <li className="my-4 px-3 rounded-md hover:bg-cyan-500 hover:text-black transition-all duration-500">
-            <NavLink to={"/contacts"}>CONTACTS</NavLink>
+            <a href="#contacts">CONTACTS</a>
           </li>
           <li className="bg-orange-500 p-2 m-2 rounded-md hover:bg-orange-400 hover:scale-95 transition-all duration-300 inline">
             <a href={cv} download>
