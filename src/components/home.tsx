@@ -6,6 +6,7 @@ import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 import Projects from "./projects";
 import Footer from "./footer";
 import Contacts from "./contacts";
+import Experience from "./experience";
 
 function Home() {
   return (
@@ -47,11 +48,14 @@ function Home() {
           </div>
         </div>
       </div>
+      <div>
+        <Experience />
+      </div>
       <div id="projects" className="">
         <Projects />
       </div>
       <div id="contacts">
-        <Contacts/>
+        <Contacts />
       </div>
       <div>
         <Footer />

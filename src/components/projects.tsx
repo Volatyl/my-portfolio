@@ -21,7 +21,7 @@ function Projects() {
           <h1 className="text-[5vw]">WHAT I'VE DONE</h1> <p className="text-[1rem] font-thin">(more coming soon)</p>
         </div>
       </div>
-      <section className="bg-white p-10 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-[6vh] relative">
+      <section className="bg-white p-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 pt-[6vh] relative">
         {sites.map((site, index) => {
           return (
             <div key={index} className="shadow-md hover:opacity-60 transition-all duration-300">
