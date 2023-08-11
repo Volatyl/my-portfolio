@@ -23,7 +23,7 @@ function Socials() {
             <div key={index} className="flex flex-col p-5">
               <a
                 href={site.url} target="blank"
-                className="bg-orange-500 cursor-pointer p-10 text-white text-[3rem] rounded-full hover:animate-spin-short"
+                className="bg-orange-500 cursor-pointer p-10 text-white text-[3rem] rounded-full hover:animate-spin-short hover:bg-zinc-700 transition-all duration-500"
               >
                 {React.createElement(site.icon)}
               </a>

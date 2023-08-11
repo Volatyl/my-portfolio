@@ -17,13 +17,13 @@ function Home() {
           className="fixed top-0 left-0 w-full h-full bg-cover bg-center transition-all duration-500"
           style={{ backgroundImage: `url(${bg})`, opacity: "0.4" }}
         ></div>
-        <div className="relative z- text-center text-white mt-5">
-          <div className="h-[89vh] pt-[15rem]">
-            <h1 className="text-[8vw] font-light">HI, I'M KENNEDY</h1>
+        <div className="relative z- text-center text-white">
+          <div className="h-[100vh] pt-[20rem]">
+            <h1 className="text-[8vw] font-light ">HI, I'M KENNEDY</h1>
             <p className="mt-2 text-[2vw] tracking-[0.52rem]">
               Fullstack Developer
             </p>
-            <div className="text-[2rem] mt-[30vh] animate-bounce">
+            <div className="text-[2rem] mt-[20vh] animate-bounce">
               <FontAwesomeIcon icon={faArrowDown} />
             </div>
           </div>

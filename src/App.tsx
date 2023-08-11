@@ -9,7 +9,7 @@ function App() {
       <div className="fixed z-20 top-0 right-0 left-0">
         <Header />
       </div>
-      <div className="mt-[11vh]">
+      <div className="">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="*" element={<NotFound />} />
