@@ -4,7 +4,7 @@ import back from "../assets/back.jpg";
 
 function Projects() {
   const sites = [
-    { url: "https://fastidious-cascaron-b3aba8.netlify.app/", pic: imports },
+    { url: "https://cars-sales.netlify.app/", pic: imports },
     {
       url: "https://646c9dc63f98e6007ab7ec0d--fancy-haupia-fc64f5.netlify.app/",
       pic: calc,
