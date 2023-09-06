@@ -1,6 +1,7 @@
 import imports from "../assets/sites/imports.png";
 import tamtam from "../assets/sites/tamtam.png";
 import calc from "../assets/sites/calc.png";
+import port from "../assets/sites/port.png";
 import back from "../assets/back.jpg";
 
 function Projects() {
@@ -10,7 +11,7 @@ function Projects() {
       url: "https://646c9dc63f98e6007ab7ec0d--fancy-haupia-fc64f5.netlify.app/",
       pic: calc,
     },
-    { url: "https://tamtammobiles.com/", pic: tamtam },
+    { url: "https://tamtammobiles.com/", pic: tamtam },{ url: "https://kennedy-muinde.netlify.app/", pic: port }
   ];
   return (
     <div className="">
