@@ -1,5 +1,3 @@
-
-
 function Experience() {
   const techs = [
     "HTML",
@@ -13,6 +11,7 @@ function Experience() {
     "FAST API",
     "SQL",
     "PHOTOSHOP",
+    "WORDPRESS",
   ];
   return (
     <div className="relative bg-zinc-100 p-[8vw] md:p-20">
@@ -26,7 +25,6 @@ function Experience() {
           SOME TECHNOLOGIES I HAVE WORKED WITH:
         </h2>
         <ul className=" flex flex-wrap gap-4 justify-center">
-    
           {techs.map((tech, index) => {
             return (
               <li
